@@ -1,38 +1,68 @@
-.App {
+.main-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #1eff00f3;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-container {
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input[type='number'] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.calculate-button {
+  display: block;
+  width: 106%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.bmi-value {
+  font-weight: bold;
+}
+
+.bmi-message {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.normal-weight {
+  color: green;
+}
+
+.obese {
+  color: red;
+}
+
+.underweight {
+  color: red;
 }
